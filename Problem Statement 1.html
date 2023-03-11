@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Navigation Menu Bar</title>
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #f2f2f2;
+            width: 100%;
+            list-style: none;
+            text-align: center;
+        }
+        .navbar li {
+            display: inline-block;
+            padding: 5px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+        }
+        .navbar li:hover {
+            background-color: #91A8D0;
+        }
+        .navbar li ul {
+            display: none;
+            position: absolute;
+            background-color: #91A8D0;
+            min-width: 150px;
+        }
+        .navbar li:hover ul {
+            display: block;
+        }
+        .navbar li ul li {
+            display: block;
+        }
+        .navbar li ul li a {
+            color: #000;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Navigation Menu Bar</h1>
+    </header>
+    <ul class="navbar">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a>
+            <ul>
+                <li><a href="#">DD_Link_1</a></li>
+                <li><a href="#">DD_Link_2</a></li>
+                <li><a href="#">DD_Link_3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Link 3</a>
+            <ul>
+                <li><a href="#">DD_Link_1</a></li>
+                <li><a href="#">DD_Link_2</a></li>
+                <li><a href="#">DD_Link_3</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

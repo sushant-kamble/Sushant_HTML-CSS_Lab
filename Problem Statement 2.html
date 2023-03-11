@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: true,
+      title: {
+        text: "Bar Plot"
+      },
+      data: [{
+        type: "column",
+        dataPoints: [
+          { y: 30, label: "30%" },
+          { y: 40, label: "40%" },
+          { y: 80, label: "80%" }
+        ]
+      }]
+    });
+    chart.render();
+  }
+</script>
+</head>
+<body>
+  <div id="chartContainer" style="height: 360px; width: 100%;">
+  </div>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

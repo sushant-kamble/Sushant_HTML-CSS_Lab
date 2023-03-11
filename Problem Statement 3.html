@@ -1,0 +1,74 @@
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Gmail Account Creation</title>
+    <style>
+        body{
+            background-image: url(background.jpg);
+            background-size: cover;
+        }
+        .form-container{
+            width: 500px;
+            height: 400px;
+            background-color: #f2f2f2;
+            border: 5px solid #cdcdcd;
+            border-radius: 5px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+        .input-field{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            font-size: 16px;
+            border: 3px solid #cdcdcd;
+            border-radius: 5px;
+        }
+        .input-field:focus{
+            background-color: rgba(51, 102, 255, 0.35);
+        }
+        .button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .button:hover{
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Create Gmail Account</h2>
+        <form action="/action_page.php">
+            <label for="name">Name</label>
+            <input type="text" class="input-field" id="name" placeholder="Enter your name" name="name" required>
+            <label for="email">Email</label>
+            <input type="text" class="input-field" id="email" placeholder="Enter your email address" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" class="input-field" id="password" placeholder="Enter your password" name="password" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" class="input-field" id="confirm-password" placeholder="Confirm your password" name="confirm-password" required>
+            <input type="submit" class="button" value="Submit">
+            <input type="reset" class="button" value="Reset">
+        </form>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".input-field").focus(function(){
+                $(this).css("background-color", "rgba(51, 102, 255, 0.35)");
+            });
+        });
+    </script>
+</body>
+
+</html>
